@@ -17,6 +17,33 @@ body {
   @apply bg-gradient-to-br from-stone-900 to-slate-900;
 }
 
+nav {
+  @apply absolute bg-stone-900 shadow shadow-cyan-50 w-full left-0 right-0 p-5 z-50 transition-all duration-200 lg:relative lg:bg-transparent lg:shadow-none lg:p-0 lg:z-auto lg:w-auto;
+  top: -100vh;
+}
+
+nav.open {
+  top: 6rem;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    top: 0;
+  }
+
+  nav.open {
+    top: 0;
+  }
+}
+
+nav ul {
+  @apply lg:flex lg:items-center lg:justify-center lg:gap-3;
+}
+
+nav ul li {
+  @apply mb-3 lg:mb-0;
+}
+
 .btn {
   @apply py-2 px-8 border-white border-2 bg-transparent text-white hover:opacity-75 transition-all duration-200;
 }

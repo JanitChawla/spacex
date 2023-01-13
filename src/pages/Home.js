@@ -1,18 +1,9 @@
 import { useState, useEffect } from "react";
 import Loading from "../components/Loading";
+import useFetch from "../hooks/useFetch";
 
 export default function Homepage() {
-  const [company, setCompany] = useState(null);
-
-  useEffect(() => {
-    const fetchCompany = async () => {
-      const res = await fetch("https://api.spacexdata.com/v4/company");
-      const data = await res.json();
-      setCompany(data);
-    };
-
-    fetchCompany();
-  }, []);
+  const [company] = useFetch("https://api.spacexdata.com/v4/company");
 
   return (
     <>
