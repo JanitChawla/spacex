@@ -19,7 +19,7 @@ body {
 
 nav {
   @apply absolute bg-stone-900 shadow shadow-cyan-50 w-full left-0 right-0 p-5 z-50 transition-all duration-200 lg:relative lg:bg-transparent lg:shadow-none lg:p-0 lg:z-auto lg:w-auto;
-  top: -100vh;
+  /* top: -100vh; */
 }
 
 nav.open {

@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Loading from "../components/Loading";
 import useFetch from "../hooks/useFetch";
 
